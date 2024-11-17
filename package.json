@@ -1,12 +1,12 @@
 {
-  "name": "NETHU-MD",
+  "name": "DARK-KNIGHT",
   "version": "1.0.0",
-  "description": "A WhatsApp Bot Created By MAduwa",
+  "description": "A WhatsApp Bot Created By Kavindu",
   "main": "index.js",
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name NETHU-MD",
-    "stop": "pm2 stop NETHU-MD",
-    "restart": "pm2 restart NETHU-MD"
+    "stop": "pm2 stop DARK-KNIGHT",
+    "restart": "pm2 restart DARK-KNIGHT"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.6.0",
