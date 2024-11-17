@@ -16,7 +16,7 @@ const search = await yts(q)
 const data = search.videos[0]
 const url = data.url
 
-let desc = `*◆ NETHU-MD SONG DOWNLOADER ◆*
+let desc = `*◆ DARK KNIGHT SONG DOWNLOADER ◆*
 
 | ➤ TITLE - ${data.title}
 
@@ -28,7 +28,7 @@ let desc = `*◆ NETHU-MD SONG DOWNLOADER ◆*
 
 |➤ AGO - ${data.ago}
 
- ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴇᴛʜᴜ ᴍᴀx
+ ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙺𝙰𝚅𝙸𝙽𝙳𝚄 𝚂𝚄𝚁𝙰𝙽𝙶𝙰
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
 
@@ -61,7 +61,7 @@ const search = await yts(q)
 const data = search.videos[0]
 const url = data.url
 
-let des = `*◆ NETHU-MD VIDEO DOWNLOADER ◆*
+let des = `*◆ DARK KNIGHT VIDEO DOWNLOADER ◆*
 
 | ➤ TITLE - ${data.title}
 
@@ -73,7 +73,7 @@ let des = `*◆ NETHU-MD VIDEO DOWNLOADER ◆*
 
 | ➤ AGO - ${data.ago}
 
-©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴇᴛʜᴜ ᴍᴀx
+©ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙺𝙰𝚅𝙸𝙽𝙳𝚄 𝚂𝚄𝚁𝙰𝙽𝙶𝙰
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:des},{quoted:mek});
 
