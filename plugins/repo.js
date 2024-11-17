@@ -11,21 +11,21 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-let dec = `*🧚‍♂️ NETHU MD Repastitory Information*
+let dec = `*🥷 DARK KNIGHT Repastitory Information*
 
-*| ɴᴀᴍᴇ*: ɴᴇᴛʜᴜ-ᴍᴅ
-*| ᴏᴡɴᴇʀ*: ɴᴇᴛʜᴍɪᴋᴀ ᴋᴀᴜꜱʜᴀʟʏᴀ (ꜱʟ ɴᴇᴛʜᴜ ᴍᴀx)
-*| ɴᴜᴍʙᴇʀ*: 94704227534
+*| ɴᴀᴍᴇ*: 𝙳𝙰𝚁𝙺 𝙺𝙽𝙸𝙶𝙷𝚃
+*| 𝙲𝚁𝙴𝙰𝚃𝙴𝚁*: 𝙺𝙰𝚅𝙸𝙽𝙳𝚄 𝚂𝚄𝚁𝙰𝙽𝙶𝙰 (𝙳𝚁𝙺 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁)
+*| ɴᴜᴍʙᴇʀ*: 94713824099
 *| ᴠᴇʀꜱɪᴏɴ*: 1.0.0
 
 
 *📡 REPO LINK*
-🔗◦https://github.com/Nethmikakaushalyaherath/NETHU-MD
+🔗◦https://github.com/DRKALPHA/DARK_KNIGHT
 
 *📌 SUBSCRIBE MY YOUTUBE CHANNEL*
-🔗◦ https://www.youtube.com/@SlNethuMax
+🔗◦https://www.youtube.com/@drkdeveloper2008
 
-©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴇᴛʜᴜ ᴍᴀx
+©ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙺𝙰𝚅𝙸𝙽𝙳𝚄 𝚂𝚄𝚁𝙰𝙽𝙶𝙰
 `
 await conn.sendMessage(from,{image:{url: `https://telegra.ph/file/7f0d7a04a30a602307e3d.jpg`},caption:dec},{quoted:mek});
 
