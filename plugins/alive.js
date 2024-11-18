@@ -15,7 +15,6 @@ let des = `👋 𝙷𝚎𝚕𝚕𝚘 ${pushname} 𝙸'𝚖 𝚊𝚕𝚒𝚟𝚎 
 
 *Im DARK KNIGHT Whatsapp Bot Create By Kavindu Suranga 🍂✨*
 
-Prefix : ${PREFIX}
 │ User : ${message.pushName}
 │ Time : ${time}
 │ Day : ${date.toLocaleString('en', { weekday: 'long' })}
