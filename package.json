@@ -4,7 +4,7 @@
   "description": "A WhatsApp Bot Created By Kavindu",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name NETHU-MD",
+    "start": "pm2 start index.js --deep-monitoring --attach --name DARK-KNIGHT",
     "stop": "pm2 stop DARK-KNIGHT",
     "restart": "pm2 restart DARK-KNIGHT"
   },
