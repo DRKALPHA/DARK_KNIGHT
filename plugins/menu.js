@@ -1,12 +1,12 @@
-const os = require('os');
-const { cmd,tlang,prefix,runtime,formatp} = require('../lib/');
+const {cmd , commands} = require('../command')
+            
 cmd({
-            pattern: "menu",
-            alias: ["list","මෙනු","මෙනූ","cmd"],
-            desc: "some settings change.",
-            category: "extra",
-            filename: __filename
-        },
+    pattern: "menu",
+    desc: "menu the bot",
+    category: "menu",
+    react: "🗃️",
+    filename: __filename
+},
         async(Void, citel, text) => {
            let list = [{
 title: 'DOWNLOAD COMMAND LIST',
