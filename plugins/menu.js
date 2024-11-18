@@ -1,69 +1,82 @@
-const {cmd , commands} = require('../command')
-
+const os = require('os');
+const { cmd,tlang,prefix,runtime,formatp} = require('../lib/');
 cmd({
-    pattern: "menu",
-    desc: "menu the bot",
-    category: "menu",
-    react: "🗃️",
-    filename: __filename
+            pattern: "menu",
+            alias: ["list","මෙනු","මෙනූ","cmd"],
+            desc: "some settings change.",
+            category: "extra",
+            filename: __filename
+        },
+        async(Void, citel, text) => {
+           let list = [{
+title: 'DOWNLOAD COMMAND LIST',
+rowId: `${prefix}downloadcmd`,
+description: ' '
 },
-
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-
-let dec = `
-
-╭─────────────━┈⊷
-│👾 ʙᴏᴛ ɴᴀᴍᴇ: ɴᴇᴛʜᴜ ᴍᴅ
-│👨‍💻 ᴏᴡɴᴇʀ : ɴᴇᴛʜᴍɪᴋᴀ ᴋᴀᴜꜱʜᴀʟʏᴀ    
-│👤 ɴᴜᴍʙᴇʀ: 94704227534
-│💻 HOSTER: ɴᴇᴛʜᴜ ᴍᴀx
-│💫 ᴘʀᴇғɪx: [Multi-Prefix]
-╰─────────────━┈⊷ 
-╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
-┃✰ .𝚂𝚝𝚒𝚌𝚔𝚎𝚛
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙰𝙸 ❯━╮
-┃✰ .𝙰𝚒
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙶𝚁𝙾𝚄𝙿 ❯━╮
-┃✰ 𝙻𝚒𝚗𝚔𝙶𝚛𝚘𝚞𝚙
-┃✰ 𝚂𝚎𝚝𝚙𝚙𝚐𝚌
-┃✰ .𝚂𝚎𝚝𝚗𝚊𝚖𝚎
-┃✰ .𝚂𝚎𝚝𝚍𝚎𝚜𝚌
-┃✰ .𝙶𝚛𝚘𝚞𝚙
-┃✰ .𝚂𝚎𝚝𝚐𝚘𝚘𝚍𝚋𝚞𝚢
-┃✰ .𝚂𝚎𝚝𝚠𝚎𝚕𝚌𝚘𝚖𝚎
-┃✰ .𝙰𝚍𝚍
-┃✰ .𝚁𝚎𝚖𝚘𝚟𝚎
-┃✰ .𝙿𝚛𝚘𝚖𝚘𝚝𝚎
-┃✰ .𝙳𝚎𝚖𝚘𝚝𝚎
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ❯━╮
-┃✰ .𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔
-┃✰ .𝙼𝚎𝚍𝚒𝚊𝚏𝚒𝚛𝚎
-┃✰ .𝙶𝚍𝚛𝚒𝚟𝚎
-┃✰ .𝙸𝚗𝚜𝚝𝚊
-┃✰ .𝚂𝚘𝚗𝚐
-┃✰ .𝚅𝚒𝚍𝚎𝚘
-┃✰ .𝚈𝚝𝚖𝚙3𝚍𝚘𝚌
-┃✰ .𝚈𝚝𝚖𝚙4𝚍𝚘𝚌
-┃✰ .𝚃𝚒𝚔𝚝𝚘𝚔
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙼𝙰𝙸𝙽 ❯━╮
-┃✰ .𝙿𝚒𝚗𝚐
-┃✰ .𝙰𝚕𝚒𝚟𝚎
-┃✰ .𝙾𝚠𝚗𝚎𝚛
-┃✰ .𝙼𝚎𝚗𝚞
-|✰ .𝚁𝚎𝚙𝚘
-╰━━━━━━━━━━━━━━━⪼
-
- ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴇᴛʜᴜ ᴍᴀx
-`
-await conn.sendMessage(from,{image:{url: `https://telegra.ph/file/7f0d7a04a30a602307e3d.jpg`},caption:dec},{quoted:mek});
-
-}catch(e){
-console.log(e)
-reply(`${e}`)
+{
+title: 'GROUP COMMAND LIST',
+rowId: `${prefix}groupcmd`,
+description: ' '
+},
+{
+title: 'GENERAL COMMAND LIST',
+rowId: `${prefix}genaralcmd`,
+description: ' '
+},
+{
+title: 'GAME COMMAND LIST',
+rowId: `${prefix}gamecmd`,
+description: ' '
+},
+{
+title: 'OWNER COMMAND LIST',
+rowId: `${prefix}ownercmd`,
+description: ' '
+},
+{
+title: 'CONVERTER COMMAND LIST',
+rowId: `${prefix}concmd`,
+description: ' '
+},
+{
+title: 'OTHER COMMAND LIST',
+rowId: `${prefix}othercmd`,
+description: ' '
 }
-})
+            ]
+            ted = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
+┃   *PRABATH-MD-WHATSAPP-BOT*
+┗━━━━━━━━━━━━━━━━━━━━━━━━━
+*Hello .* ${citel.pushName}
+*I Am 𝗣𝗥𝗔𝗕𝗔𝗧𝗛-𝗠𝗗*
+
+⦁ *CREATED DATE :* 2023/01/2.
+⦁ *CREATED TIME :* 8:30 PM.
+⦁ *RUNNING TIME :* ${runtime(process.uptime())}
+⦁ *RAM USAGE    :* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+
+
+
+
+👨‍💻 *𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧* 👨‍💻`
+            const sections = [
+
+                {
+                    title: "Select & Send",
+                    rows: list
+                }
+
+            ]
+            const listMessage = {
+                text: ted,
+                footer: tlang().footer,
+                title: ``,
+                buttonText: "Select ",
+                mentions: await Void.parseMention(ted),
+                sections
+            }
+            return Void.sendMessage(citel.chat, listMessage, {
+                quoted: citel
+            })
+        }
+    )
