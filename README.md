@@ -1,18 +1,17 @@
-```DAK-MD WHATSAPP USER BOT CREATED BY MR DRK OFC```
+```DARK KNIGHT WHATSAPP USER BOT CREATED BY MR DRK OFC```
 
 <div align="center">
-    <b>DAK-MD USER BOT</b>
+    <b>DARK KNIGHT USER BOT</b>
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 <div align="left">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Rubik+Dirt&size=65&pause=1000&color=F72C3F&background=FF20A500&center=true&vCenter=true&width=1000&height=150&lines=DAK+MD;CREATED+BY+DRK_Developer;Kavindu+Suranga" alt="Typing SVG" /></a>   
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Rubik+Dirt&size=65&pause=1000&color=F72C3F&background=FF20A500&center=true&vCenter=true&width=1000&height=150&lines=DARK+KNIGHT;CREATED+BY+DRK_Developer;Kavindu+Suranga" alt="Typing SVG" /></a>   
 </p> 
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
    <p align="center">
 
-<a target="_blank" href="https://www.imgtr.net/lIChR7qCSXeTEvG"><img  src="https://www.imgtr.net/ib/Vzgf3X5kLKuGZyI_1728206141.jpg" alt="1000039732.jpg"/></a>
-
+<a target="_blank" href="https://www.imgtr.net/cT2itnlgWawGfXA"><img  src="https://www.imgtr.net/ib/EA8pVTuImefPsch_1731927827.jpg" alt="1000001241.jpg"/></a>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
