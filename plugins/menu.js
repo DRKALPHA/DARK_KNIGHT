@@ -60,7 +60,7 @@ let dec = `
 
  ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙺𝙰𝚅𝙸𝙽𝙳𝚄 𝚂𝚄𝚁𝙰𝙽𝙶𝙰
 `
-await conn.sendMessage(from,{image:{url: `https://telegra.ph/file/7f0d7a04a30a602307e3d.jpg`},caption:dec},{quoted:mek});
+await conn.sendMessage(from,{image:{url: `https://www.imgtr.net/hEYi8LWqFjLsdPY`},caption:dec},{quoted:mek});
 
 }catch(e){
 console.log(e)
