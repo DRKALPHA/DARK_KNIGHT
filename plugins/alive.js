@@ -15,10 +15,16 @@ let des = `👋 𝙷𝚎𝚕𝚕𝚘 ${pushname} 𝙸'𝚖 𝚊𝚕𝚒𝚟𝚎 
 
 *Im DARK KNIGHT Whatsapp Bot Create By Kavindu Suranga 🍂✨*
 
-| *Version*: 1.0.0
-| *Memory*: 38.09MB/7930MB
-| *Runtime*: 1 minute,25 seconds
-| *Developer*: 𝙺𝙰𝚅𝙸𝙽𝙳𝚄 𝚂𝚄𝚁𝙰𝙽𝙶𝙰
+Prefix : ${PREFIX}
+│ User : ${message.pushName}
+│ Time : ${time}
+│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
+│ Date : ${date.toLocaleDateString('hi')}
+│ Version : ${VERSION}
+│ Plugins : ${PLUGINS.count}
+│ Ram : ${getRam()}
+│ Uptime : ${getUptime('t')}
+│ Platform : ${getPlatform()}
 
 
 
