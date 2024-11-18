@@ -27,7 +27,7 @@
     <img alt="whatsapp" src="https://img.shields.io/badge/Join Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
   <p align="center">
-<a href="https://github.com/DRKALPHA/DARK_KNIGHT/fork" target="blank"><img align="center" src="https://i.imgur.com/cxaSEWe.png" alt="Deploy bot" height="112" width="310" /></a>
+<a href="https://github.com/DRKALPHA/DARK_KNIGHT/fork" target="blank"><img align="center" src="https://i.imgur.com/cxaSEWe.png" alt="Deploy bot" height="112" width="100%" /></a>
   <div>
       
 <div>
@@ -37,7 +37,7 @@
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
-### DEPLOY HEROKU
+### DEPLOY KOYEB
 
  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nethu-cloud/NETHU-MD-V1)
 
