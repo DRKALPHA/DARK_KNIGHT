@@ -60,7 +60,7 @@ let dec = `
 
 ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅʀᴋ ᴅᴇᴠᴇʟᴏᴘᴇʀ
 `
-await conn.sendMessage(from,{image:{url: `https://telegra.ph/file/7f0d7a04a30a602307e3d.jpg`},caption:dec},{quoted:mek});
+await conn.sendMessage(from,{image:{url: `https://www.imgtr.net/ib/EA8pVTuImefPsch_1731927827.jpg`},caption:dec},{quoted:mek});
 
 }catch(e){
 console.log(e)
