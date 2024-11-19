@@ -1,72 +1,127 @@
-const {cmd , commands} = require('../command')
+const bot = require('../lib/events')
+const {
+  addSpace,
+  textToStylist,
+  PREFIX,
+  getUptime,
+  PLUGINS,
+  getRam,
+  getDate,
+  getPlatform,
+} = require('../lib/')
+const { VERSION } = require('../config')
+bot.addCommand(
+  {
+    pattern: 'help ?(.*)',
+    dontAddCommandList: true,
+  },
+  async (message, match) => {
+    const sorted = bot.commands.sort((a, b) => {
+      if (a.name && b.name) {
+        return a.name.localeCompare(b.name)
+      }
+      return 0
+    })
+    const [date, time] = getDate()
+    let CMD_HELP = `╭────────────────╮
+						ʟᴇᴠᴀɴᴛᴇʀ
+╰────────────────╯
 
-cmd({
-    pattern: "menu",
-    desc: "menu the bot",
-    category: "menu",
-    react: "🗃️",
-    filename: __filename
-},
-
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-
-let dec = `
-
-╭─────────────━┈⊷
-|│ʙᴏᴛ ɴᴀᴍᴇ: ᴅᴀʀᴋ ᴋɴɪɢʜᴛ
-|│ᴜꜱᴇʀ    : ${message.pushName}    
-|│ɴᴜᴍʙᴇʀ  : ${botNumber}
-| ʜᴏꜱᴛᴇʀ  : ᴋᴀᴠɪɴᴅᴜ ꜱᴜʀᴀɴɢᴀ
-|ᴛɪᴍᴇ     : ${time}
-|ʀᴀᴍ      : ${getRam()}
-|ᴜᴘᴛɪᴍᴇ   : ${getUptime('t')}
-|│ᴘʀᴇғɪx  : [Multi-Prefix]
-╰─────────────━┈⊷ 
-╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
-┃✰ .𝚂𝚝𝚒𝚌𝚔𝚎𝚛
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙰𝙸 ❯━╮
-┃✰ .𝙰𝚒
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙶𝚁𝙾𝚄𝙿 ❯━╮
-┃✰ 𝙻𝚒𝚗𝚔𝙶𝚛𝚘𝚞𝚙
-┃✰ 𝚂𝚎𝚝𝚙𝚙𝚐𝚌
-┃✰ .𝚂𝚎𝚝𝚗𝚊𝚖𝚎
-┃✰ .𝚂𝚎𝚝𝚍𝚎𝚜𝚌
-┃✰ .𝙶𝚛𝚘𝚞𝚙
-┃✰ .𝚂𝚎𝚝𝚐𝚘𝚘𝚍𝚋𝚞𝚢
-┃✰ .𝚂𝚎𝚝𝚠𝚎𝚕𝚌𝚘𝚖𝚎
-┃✰ .𝙰𝚍𝚍
-┃✰ .𝚁𝚎𝚖𝚘𝚟𝚎
-┃✰ .𝙿𝚛𝚘𝚖𝚘𝚝𝚎
-┃✰ .𝙳𝚎𝚖𝚘𝚝𝚎
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ❯━╮
-┃✰ .𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔
-┃✰ .𝙼𝚎𝚍𝚒𝚊𝚏𝚒𝚛𝚎
-┃✰ .𝙶𝚍𝚛𝚒𝚟𝚎
-┃✰ .𝙸𝚗𝚜𝚝𝚊
-┃✰ .𝚂𝚘𝚗𝚐
-┃✰ .𝚅𝚒𝚍𝚎𝚘
-┃✰ .𝚈𝚝𝚖𝚙3𝚍𝚘𝚌
-┃✰ .𝚈𝚝𝚖𝚙4𝚍𝚘𝚌
-┃✰ .𝚃𝚒𝚔𝚝𝚘𝚔
-╰━━━━━━━━━━━━━━━⪼
-╭━❮ 𝙼𝙰𝙸𝙽 ❯━╮
-┃✰ .𝙿𝚒𝚗𝚐
-┃✰ .𝙰𝚕𝚒𝚟𝚎
-┃✰ .𝙾𝚠𝚗𝚎𝚛
-┃✰ .𝙼𝚎𝚗𝚞
-|✰ .𝚁𝚎𝚙𝚘
-╰━━━━━━━━━━━━━━━⪼
-
-©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅʀᴋ ᴅᴇᴠᴇʟᴏᴘᴇʀ
+╭────────────────
+│ Prefix : ${PREFIX}
+│ User : ${message.pushName}
+│ Time : ${time}
+│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
+│ Date : ${date.toLocaleDateString('hi')}
+│ Version : ${VERSION}
+│ Plugins : ${PLUGINS.count}
+│ Ram : ${getRam()}
+│ Uptime : ${getUptime('t')}
+│ Platform : ${getPlatform()}
+╰────────────────
+╭────────────────
 `
-await conn.sendMessage(from,{image:{url: `https://www.imgtr.net/ib/EA8pVTuImefPsch_1731927827.jpg`},caption:dec},{quoted:mek});
+    sorted.map(async (command, i) => {
+      if (command.dontAddCommandList === false && command.pattern !== undefined) {
+        CMD_HELP += `│ ${i + 1} ${addSpace(i + 1, sorted.length)}${textToStylist(
+          command.name.toUpperCase(),
+          'mono'
+        )}\n`
+      }
+    })
 
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
+    CMD_HELP += `╰────────────────`
+    return await message.send('```' + CMD_HELP + '```')
+  }
+)
+
+bot.addCommand(
+  {
+    pattern: 'list ?(.*)',
+    dontAddCommandList: true,
+  },
+  async (message, match) => {
+    let msg = ''
+    const sorted = bot.commands.sort((a, b) => {
+      if (a.name && b.name) {
+        return a.name.localeCompare(b.name)
+      }
+      return 0
+    })
+    sorted.map(async (command, index) => {
+      if (command.dontAddCommandList === false && command.pattern !== undefined) {
+        msg += `${index + 1} ${command.name}\n${command.desc}\n\n`
+      }
+    })
+    await message.send('```' + msg.trim() + '```')
+  }
+)
+bot.addCommand(
+  {
+    pattern: 'menu ?(.*)',
+    dontAddCommandList: true,
+  },
+  async (message, match) => {
+    const commands = {}
+    bot.commands.map(async (command, index) => {
+      if (command.dontAddCommandList === false && command.pattern !== undefined) {
+        let cmdType = command.type.toLowerCase()
+        if (!commands[cmdType]) commands[cmdType] = []
+        let isDiabled = command.active === false
+        let cmd = command.name.trim()
+        commands[cmdType].push(isDiabled ? cmd + ' [disabled]' : cmd)
+      }
+    })
+    const [date, time] = getDate()
+    let msg = `\`\`\`╭═══ LEVANTER ═══⊷
+┃❃╭──────────────
+┃❃│ Prefix : ${PREFIX}
+┃❃│ User : ${message.pushName}
+┃❃│ Time : ${time}
+┃❃│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
+┃❃│ Date : ${date.toLocaleDateString('hi')}
+┃❃│ Version : ${VERSION}
+┃❃│ Plugins : ${PLUGINS.count}
+┃❃│ Ram : ${getRam()}
+┃❃│ Uptime : ${getUptime('t')}
+┃❃│ Platform : ${getPlatform()}
+┃❃╰───────────────
+╰═════════════════⊷\`\`\`\n`
+
+    if (match && commands[match]) {
+      msg += ` ╭─❏ ${textToStylist(match.toLowerCase(), 'smallcaps')} ❏\n`
+      for (const plugin of commands[match])
+        msg += ` │ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
+      msg += ` ╰─────────────────`
+
+      return await message.send(msg)
+    }
+    for (const command in commands) {
+      msg += ` ╭─❏ ${textToStylist(command.toLowerCase(), 'smallcaps')} ❏\n`
+      for (const plugin of commands[command])
+        msg += ` │ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
+      msg += ` ╰─────────────────\n`
+    }
+    await message.send(msg.trim())
+  }
+)
