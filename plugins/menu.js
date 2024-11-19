@@ -65,7 +65,7 @@ let dec = `
 `
 await conn.sendMessage(from,{image:{url: `https://i.ibb.co/xHxXHn1/20241119-160231.jpg`},caption:dec},{quoted:mek});
 
-return reply(`${status}`)
+
 }catch(e){
 console.log(e)
 reply(`${e}`)
