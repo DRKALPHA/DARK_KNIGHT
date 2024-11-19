@@ -22,7 +22,9 @@ let dec = `
 |⏳ ᴜᴘ ᴛɪᴍᴇ : ${runtime(process.uptime())}    
 |📟 ʀᴀᴍ ᴜꜱᴀɢᴇ : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 |⚙️ ʜɪꜱᴛ ɴᴀᴍᴇ : ${os.hostname()}
-│💻 ʜᴏꜱᴛᴇʀ : ᴋᴀᴠɪɴᴅᴜ ꜱᴜʀᴀɴɢᴀ`
+│💻 ʜᴏꜱᴛᴇʀ : ᴋᴀᴠɪɴᴅᴜ ꜱᴜʀᴀɴɢᴀ
+|💫 ᴘʀᴇғɪx: [Multi-Prefix]
+╰─────────────━┈⊷ 
 ╰─────────────━┈⊷ 
 ╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
 ┃✰ .𝚂𝚝𝚒𝚌𝚔𝚎𝚛
