@@ -71,7 +71,7 @@ console.log('Bot connected to whatsapp ✅')
 
 let up = `DARK-KNIGHT connected successful ✅\n\nPREFIX: ${prefix}`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://www.imgtr.net/ib/EA8pVTuImefPsch_1731927827.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/7ycck2S/1128228183je8291ww8i2.jpg` }, caption: up })
 
 }
 })
