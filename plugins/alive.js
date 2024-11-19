@@ -25,6 +25,8 @@ let des = `👋 𝙷𝚎𝚕𝚕𝚘 ${pushname} 𝙸'𝚖 𝚊𝚕𝚒𝚟𝚎 
 
  ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙺𝙰𝚅𝙸𝙽𝙳𝚄 𝚂𝚄𝚁𝙰𝙽𝙶𝙰`
 return await conn.sendMessage(from,{image: {url: `https://i.ibb.co/xHxXHn1/20241119-160231.jpg`},caption: des},{quoted: mek})
+
+return reply(`${status}`)
 }catch(e){
 console.log(e)
 reply(`${e}`)
