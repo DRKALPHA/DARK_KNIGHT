@@ -19,9 +19,6 @@ let dec = `
 │👤 ɴᴜᴍʙᴇʀ: ${botNumber}
 │💻 HOSTER: ᴋᴀᴠɪɴᴅᴜ ꜱᴜʀᴀɴɢᴀ
 │💫 ᴘʀᴇғɪx: [Multi-Prefix]
-│ Time : ${time}
-│ Ram : ${getRam()}
-│ Uptime : ${getUptime('t')}
 ╰─────────────━┈⊷ 
 ╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
 ┃✰ .𝚂𝚝𝚒𝚌𝚔𝚎𝚛
