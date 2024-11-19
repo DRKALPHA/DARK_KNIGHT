@@ -19,13 +19,9 @@ let dec = `
 │👤 ɴᴜᴍʙᴇʀ: ${botNumber}
 │💻 HOSTER: ᴋᴀᴠɪɴᴅᴜ ꜱᴜʀᴀɴɢᴀ
 │💫 ᴘʀᴇғɪx: [Multi-Prefix]
-│ User : ${message.pushName}
 │ Time : ${time}
-│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
-│ Date : ${date.toLocaleDateString('hi')}
 │ Ram : ${getRam()}
 │ Uptime : ${getUptime('t')}
-│ Platform : ${getPlatform()}
 ╰─────────────━┈⊷ 
 ╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
 ┃✰ .𝚂𝚝𝚒𝚌𝚔𝚎𝚛
