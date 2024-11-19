@@ -11,7 +11,7 @@ let baseUrl;
 })();
 
 
-const yourName = "*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴇᴛʜᴜ ᴍᴀx*";
+const yourName = "* ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅʀᴋ ᴅᴇᴠᴇʟᴏᴘᴇʀ*";
 
 
 
