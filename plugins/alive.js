@@ -15,20 +15,13 @@ let des = `👋 𝙷𝚎𝚕𝚕𝚘 ${pushname} 𝙸'𝚖 𝚊𝚕𝚒𝚟𝚎 
 
 *Im DARK KNIGHT Whatsapp Bot Create By Kavindu Suranga 🍂✨*
 
-│ User : ${message.pushName}
-│ Time : ${time}
-│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
-│ Date : ${date.toLocaleDateString('hi')}
-│ Version : ${VERSION}
-│ Plugins : ${PLUGINS.count}
-│ Ram : ${getRam()}
-│ Uptime : ${getUptime('t')}
-│ Platform : ${getPlatform()}
-
-
+| *Version*: 1.0.0
+| *Memory*: 38.09MB/7930MB
+| *Runtime*: 1 minute,25 seconds
+| *Owner*: ${isMe}
 
  ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙺𝙰𝚅𝙸𝙽𝙳𝚄 𝚂𝚄𝚁𝙰𝙽𝙶𝙰`
-return await conn.sendMessage(from,{image: {url: config.ALIVE_IMG},caption: des},{quoted: mek})
+return await conn.sendMessage(from,{image: {url: `https://i.ibb.co/xHxXHn1/20241119-160231.jpg`},caption: des},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`${e}`)
