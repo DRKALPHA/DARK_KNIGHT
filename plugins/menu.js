@@ -16,14 +16,14 @@ try{
 let dec = `
 
 ╭─────────────━┈⊷
-│👾 ʙᴏᴛ ɴᴀᴍᴇ--: 𝐃𝐀𝐑𝐊 𝐊𝐍𝐈𝐆𝐇𝐓𝐊𝐍𝐈𝐆𝐇𝐓
-│👨‍💻 ᴏᴡɴᴇʀ-----: ${pushname}    
-│👤 ɴᴜᴍʙᴇʀ----: ${botNumber}
-|⏳ ᴜᴘ ᴛɪᴍᴇ---: ${runtime(process.uptime())}    
-|📟 ʀᴀᴍ ᴜꜱᴀɢᴇ-: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-|⚙️ ʜɪꜱᴛ ɴᴀᴍᴇ-: ${os.hostname()}
-│💻 ʜᴏꜱᴛᴇʀ----: ᴋᴀᴠɪɴᴅᴜ ꜱᴜʀᴀɴɢᴀ
-│💫 ᴘʀᴇꜰɪx----: ${prefix}
+│👾 ʙᴏᴛ ɴᴀᴍᴇ : 𝐃𝐀𝐑𝐊 𝐊𝐍𝐈𝐆𝐇𝐓𝐊𝐍𝐈𝐆𝐇𝐓
+│👨‍💻 ᴏᴡɴᴇʀ : ${pushname}    
+│👤 ɴᴜᴍʙᴇʀ : ${botNumber}
+|⏳ ᴜᴘ ᴛɪᴍᴇ : ${runtime(process.uptime())}    
+|📟 ʀᴀᴍ ᴜꜱᴀɢᴇ : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+|⚙️ ʜɪꜱᴛ ɴᴀᴍᴇ : ${os.hostname()}
+│💻 ʜᴏꜱᴛᴇʀ : ᴋᴀᴠɪɴᴅᴜ ꜱᴜʀᴀɴɢᴀ
+│💫 ᴘʀᴇꜰɪx : ` . `
 ╰─────────────━┈⊷ 
 ╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
 ┃✰ .𝚂𝚝𝚒𝚌𝚔𝚎𝚛
