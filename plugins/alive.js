@@ -15,10 +15,13 @@ let des = `👋 𝙷𝚎𝚕𝚕𝚘 ${pushname} 𝙸'𝚖 𝚊𝚕𝚒𝚟𝚎 
 
 *Im DARK KNIGHT Whatsapp Bot Create By Kavindu Suranga 🍂✨*
 
-| *Version*: 1.0.0
-| *Memory*: 38.09MB/7930MB
-| *Runtime*: 1 minute,25 seconds
-| *Owner*: ${isMe}
+    ┌────────────────────
+    *├ ⏳Uptime----:  ${runtime(process.uptime())}    
+    *├ 📟Ram usage-: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+    *├ ⚙️HostName--: ${os.hostname()}
+    *├ 👨‍💻Owner-----: ᴋᴀᴠɪɴᴅᴜ ꜱᴜʀᴀɴɢᴀ
+    *├ 🧬Version---: 1.0.0
+    └───────────────────────
 
  ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙺𝙰𝚅𝙸𝙽𝙳𝚄 𝚂𝚄𝚁𝙰𝙽𝙶𝙰`
 return await conn.sendMessage(from,{image: {url: `https://i.ibb.co/xHxXHn1/20241119-160231.jpg`},caption: des},{quoted: mek})
