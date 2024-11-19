@@ -14,11 +14,14 @@ try{
 let dec = `
 
 ╭─────────────━┈⊷
-│👾 ʙᴏᴛ ɴᴀᴍᴇ: 𝐃𝐀𝐑𝐊 𝐊𝐍𝐈𝐆𝐇𝐓𝐊𝐍𝐈𝐆𝐇𝐓
-│👨‍💻 ᴏᴡɴᴇʀ : ${pushname}    
-│👤 ɴᴜᴍʙᴇʀ: ${botNumber}
-│💻 HOSTER: ᴋᴀᴠɪɴᴅᴜ ꜱᴜʀᴀɴɢᴀ
-│💫 ᴘʀᴇғɪx: [Multi-Prefix]
+│👾 ʙᴏᴛ ɴᴀᴍᴇ-: 𝐃𝐀𝐑𝐊 𝐊𝐍𝐈𝐆𝐇𝐓𝐊𝐍𝐈𝐆𝐇𝐓
+│👨‍💻 ᴏᴡɴᴇʀ----: ${pushname}    
+│👤 ɴᴜᴍʙᴇʀ---: ${botNumber}
+|⏳Uptime----:  ${runtime(process.uptime())}    
+|📟Ram usage-: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+|⚙️HostName--: ${os.hostname()}
+│💻 HOSTER---: ᴋᴀᴠɪɴᴅᴜ ꜱᴜʀᴀɴɢᴀ
+│💫 ᴘʀᴇғɪx---: [Multi-Prefix]
 ╰─────────────━┈⊷ 
 ╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
 ┃✰ .𝚂𝚝𝚒𝚌𝚔𝚎𝚛
@@ -55,7 +58,7 @@ let dec = `
 ┃✰ .𝙰𝚕𝚒𝚟𝚎
 ┃✰ .𝙾𝚠𝚗𝚎𝚛
 ┃✰ .𝙼𝚎𝚗𝚞
-|✰ .𝚁𝚎𝚙𝚘
+┃✰ .𝚁𝚎𝚙𝚘
 ╰━━━━━━━━━━━━━━━⪼
 
   ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅʀᴋ ᴅᴇᴠᴇʟᴏᴘᴇʀ
